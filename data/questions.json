@@ -1,0 +1,52 @@
+{
+  "questions": [
+    {
+      "id": "q-get-into",
+      "title": "为什么是 get into trouble，而不是 get in trouble？",
+      "note": "需要区分“处于内部”与“跨越边界进入状态”的动态感。",
+      "related": ["get", "in", "into"],
+      "growth": "growing",
+      "created": "2026-07-23"
+    },
+    {
+      "id": "q-go-bad",
+      "title": "为什么食物变坏常说 go bad？",
+      "note": "探索 go 如何从空间离开延伸为偏离正常状态。",
+      "related": ["go", "change", "state"],
+      "growth": "seed",
+      "created": "2026-07-23"
+    },
+    {
+      "id": "q-over",
+      "title": "over 的“上方、越过、结束”如何属于同一个模型？",
+      "note": "寻找空间路径跨越终点后形成抽象意义的过程。",
+      "related": ["over", "space", "motion"],
+      "growth": "seed",
+      "created": "2026-07-23"
+    },
+    {
+      "id": "q-through-across",
+      "title": "through 与 across 的路径视角到底差在哪里？",
+      "note": "一个关注内部通道，一个关注区域两侧，仍需补充更多边界案例。",
+      "related": ["through", "across"],
+      "growth": "growing",
+      "created": "2026-07-23"
+    },
+    {
+      "id": "q-get-become",
+      "title": "get 与 become 都表示变化时，语感差异来自哪里？",
+      "note": "初步假设：get 更接近日常经历和结果抵达，become 更直接标记身份或性质转化。",
+      "related": ["get", "become", "change"],
+      "growth": "growing",
+      "created": "2026-07-23"
+    },
+    {
+      "id": "q-look-up",
+      "title": "look up 为什么既能“向上看”又能“查找”？",
+      "note": "需要追踪视觉方向、目标发现和短语动词构式之间的连接。",
+      "related": ["look", "over"],
+      "growth": "seed",
+      "created": "2026-07-23"
+    }
+  ]
+}
