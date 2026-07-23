@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="English Discovery Map — 通过概念、连接与问题探索英语世界。" />
+  <title>English Discovery Map</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise"></div>
+  <header class="topbar">
+    <a class="brand" href="#map" aria-label="回到世界地图">
+      <span class="brand-mark">ED</span>
+      <span>
+        <strong>English Discovery Map</strong>
+        <small>英语世界发现地图</small>
+      </span>
+    </a>
+    <nav class="nav" aria-label="主导航">
+      <button class="nav-link active" data-view="map">世界地图</button>
+      <button class="nav-link" data-view="questions">问题森林</button>
+      <button class="nav-link" data-view="discoveries">发现日志</button>
+    </nav>
+    <div class="version">v0.1</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div>
+        <p class="eyebrow">BUILD A WORLD MODEL, NOT A WORD LIST</p>
+        <h1>让英语世界，<br><span>一点一点亮起来。</span></h1>
+        <p class="hero-copy">这里不是单词本。每个节点代表一个概念，每条连线代表一种理解。我们用问题探索，用地图沉淀。</p>
+      </div>
+      <div class="hero-stats" id="hero-stats"></div>
+    </section>
+
+    <section class="toolbar" aria-label="地图工具">
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="search" type="search" placeholder="搜索概念，例如 get / into / over" autocomplete="off" />
+      </div>
+      <div class="filters" id="filters"></div>
+    </section>
+
+    <section id="map-view" class="view active-view">
+      <div class="map-shell">
+        <div class="map-header">
+          <div>
+            <p class="section-kicker">WORLD MAP</p>
+            <h2>概念网络</h2>
+          </div>
+          <div class="legend">
+            <span><i class="dot explored"></i>已探索</span>
+            <span><i class="dot growing"></i>正在形成</span>
+            <span><i class="dot seed"></i>待探索</span>
+          </div>
+        </div>
+        <div class="map-canvas" id="map-canvas" aria-live="polite"></div>
+      </div>
+      <aside class="detail-panel" id="detail-panel" aria-live="polite">
+        <div class="empty-detail">
+          <span class="empty-orbit"></span>
+          <h3>选择一个概念</h3>
+          <p>点击地图中的节点，查看它的核心模型、连接与待解决问题。</p>
+        </div>
+      </aside>
+    </section>
+
+    <section id="questions-view" class="view">
+      <div class="section-heading">
+        <p class="section-kicker">QUESTION FOREST</p>
+        <h2>问题森林</h2>
+        <p>未解决的问题不是漏洞，而是地图上等待点亮的区域。</p>
+      </div>
+      <div class="question-grid" id="question-grid"></div>
+    </section>
+
+    <section id="discoveries-view" class="view">
+      <div class="section-heading">
+        <p class="section-kicker">DISCOVERY LOG</p>
+        <h2>发现日志</h2>
+        <p>记录理解如何改变，而不是只记录“学过什么”。</p>
+      </div>
+      <div class="timeline" id="timeline"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span>English Discovery Lab</span>
+    <span>Map data is the single source of truth.</span>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
