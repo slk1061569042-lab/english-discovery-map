@@ -1,0 +1,40 @@
+@media (max-width: 1100px) {
+  .topbar {
+    grid-template-columns: 1fr auto;
+  }
+
+  .nav {
+    display: flex;
+    justify-self: end;
+  }
+
+  .version {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .topbar {
+    position: sticky;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    min-height: auto;
+    padding: 13px 4vw 10px;
+  }
+
+  .brand {
+    justify-self: center;
+  }
+
+  .nav {
+    justify-self: stretch;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .nav-link {
+    flex: 1 0 auto;
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
