@@ -1,0 +1,32 @@
+{
+  "discoveries": [
+    {
+      "version": "v0.1",
+      "date": "2026-07-23",
+      "title": "从单词表转向世界模型",
+      "description": "确定项目的核心原则：不把英语拆成孤立释义，而是记录概念、关系、问题和理解演化。",
+      "tags": ["system", "world-model", "foundation"]
+    },
+    {
+      "version": "v0.1",
+      "date": "2026-07-23",
+      "title": "get 的核心模型：抵达结果点",
+      "description": "把“获得、到达、变得”统一为同一条路径：主体经过过程后，抵达新的位置、拥有关系或状态。",
+      "tags": ["get", "change", "result"]
+    },
+    {
+      "version": "v0.1",
+      "date": "2026-07-23",
+      "title": "in 与 into：状态和跨界运动",
+      "description": "in 描述边界内部的静态关系；into 在此基础上加入方向，突出从外部跨越边界进入内部。",
+      "tags": ["in", "into", "space"]
+    },
+    {
+      "version": "v0.1",
+      "date": "2026-07-23",
+      "title": "go 连接物理运动与状态变化",
+      "description": "go 的“离开当前点”可以延伸为偏离当前或正常状态，因此 go bad、go wrong、go quiet 并不是彼此无关的固定搭配。",
+      "tags": ["go", "motion", "change"]
+    }
+  ]
+}
