@@ -1,0 +1,383 @@
+{
+  "meta": {
+    "title": "English Discovery Map",
+    "version": "0.1.0",
+    "updated": "2026-07-23",
+    "principle": "Build a world model, not a word list."
+  },
+  "categories": [
+    { "id": "all", "label": "全部" },
+    { "id": "change", "label": "变化" },
+    { "id": "space", "label": "空间" },
+    { "id": "motion", "label": "运动" },
+    { "id": "state", "label": "状态" },
+    { "id": "perception", "label": "感知" }
+  ],
+  "nodes": [
+    {
+      "id": "english",
+      "label": "English",
+      "subtitle": "WORLD MODEL",
+      "category": "all",
+      "status": "explored",
+      "level": "core",
+      "x": 550,
+      "y": 335,
+      "coreModel": "用关系理解语言，而不是孤立记忆词义",
+      "description": "英语在这里被看成一个彼此连接的概念系统。词语只是入口，真正要理解的是空间、变化、状态、运动与人的视角如何共同组织意义。",
+      "examples": [
+        { "en": "A word is a doorway, not a destination.", "zh": "一个词是入口，不是终点。" }
+      ]
+    },
+    {
+      "id": "change",
+      "label": "Change",
+      "subtitle": "变化域",
+      "category": "change",
+      "status": "explored",
+      "level": "domain",
+      "x": 765,
+      "y": 245,
+      "coreModel": "从一个状态过渡到另一个状态",
+      "description": "变化域关注状态如何开始、发展、完成或偏离。get、become、turn、grow 与 go 都能表达变化，但它们强调的路径不同。",
+      "examples": [
+        { "en": "The sky got dark.", "zh": "天空变暗了。" },
+        { "en": "She became confident.", "zh": "她变得自信。" }
+      ]
+    },
+    {
+      "id": "space",
+      "label": "Space",
+      "subtitle": "空间域",
+      "category": "space",
+      "status": "explored",
+      "level": "domain",
+      "x": 334,
+      "y": 226,
+      "coreModel": "位置、边界、路径与视角",
+      "description": "介词不是中文释义的替换表，而是一组空间模型。理解容器、表面、方向和路径后，它们的抽象用法会自然展开。",
+      "examples": [
+        { "en": "in the room → in trouble", "zh": "从物理容器延伸到抽象状态。" }
+      ]
+    },
+    {
+      "id": "motion",
+      "label": "Motion",
+      "subtitle": "运动域",
+      "category": "motion",
+      "status": "growing",
+      "level": "domain",
+      "x": 361,
+      "y": 470,
+      "coreModel": "主体沿路径发生位置或状态迁移",
+      "description": "运动既可以发生在物理空间，也可以发生在抽象状态中。go、come、through、across 等词都在组织路径。",
+      "examples": [
+        { "en": "go through a tunnel / go through a crisis", "zh": "穿过隧道 / 经历危机。" }
+      ]
+    },
+    {
+      "id": "state",
+      "label": "State",
+      "subtitle": "状态域",
+      "category": "state",
+      "status": "growing",
+      "level": "domain",
+      "x": 777,
+      "y": 455,
+      "coreModel": "某一时刻事物所处的情形",
+      "description": "be、stay、remain 等词帮助我们描述状态的存在、持续与稳定。变化域回答“如何变”，状态域回答“现在是什么”。",
+      "examples": [
+        { "en": "be quiet / stay quiet / remain quiet", "zh": "处于、保持、仍然处于安静状态。" }
+      ]
+    },
+    {
+      "id": "get",
+      "label": "get",
+      "subtitle": "REACH A STATE",
+      "category": "change",
+      "status": "explored",
+      "level": "concept",
+      "x": 902,
+      "y": 180,
+      "coreModel": "达到一个新的状态或位置",
+      "description": "get 的核心不是“获得”，而是主体经过某种过程后到达一个结果点。获得东西、到达地点、进入状态，都可以看成“抵达”。",
+      "examples": [
+        { "en": "get tired", "zh": "进入疲惫状态" },
+        { "en": "get home", "zh": "到达家" },
+        { "en": "get a chance", "zh": "机会来到自己可拥有的位置" }
+      ]
+    },
+    {
+      "id": "become",
+      "label": "become",
+      "subtitle": "FORMAL CHANGE",
+      "category": "change",
+      "status": "growing",
+      "level": "concept",
+      "x": 956,
+      "y": 292,
+      "coreModel": "身份或性质转化为新的状态",
+      "description": "become 直接聚焦变化后的身份或性质，语气通常比 get 更正式，也更少强调过程中的接触感。",
+      "examples": [
+        { "en": "become a doctor", "zh": "成为医生" },
+        { "en": "become clear", "zh": "变得清晰" }
+      ]
+    },
+    {
+      "id": "turn",
+      "label": "turn",
+      "subtitle": "DIRECTIONAL CHANGE",
+      "category": "change",
+      "status": "seed",
+      "level": "concept",
+      "x": 850,
+      "y": 96,
+      "coreModel": "转向并呈现另一种状态",
+      "description": "turn 保留了方向改变的空间感觉，因此常用于颜色、天气、年龄节点或明显转折。",
+      "examples": [
+        { "en": "turn red", "zh": "转为红色" },
+        { "en": "turn cold", "zh": "转冷" }
+      ]
+    },
+    {
+      "id": "grow",
+      "label": "grow",
+      "subtitle": "GRADUAL CHANGE",
+      "category": "change",
+      "status": "seed",
+      "level": "concept",
+      "x": 1010,
+      "y": 116,
+      "coreModel": "随时间逐渐发展成某种状态",
+      "description": "grow 强调有机、缓慢、累积式变化，常见于能力、情感、关系或程度。",
+      "examples": [
+        { "en": "grow stronger", "zh": "逐渐变强" },
+        { "en": "grow apart", "zh": "关系逐渐疏远" }
+      ]
+    },
+    {
+      "id": "go",
+      "label": "go",
+      "subtitle": "MOVE AWAY / CHANGE",
+      "category": "motion",
+      "status": "growing",
+      "level": "concept",
+      "x": 564,
+      "y": 552,
+      "coreModel": "离开当前点，沿路径进入另一位置或状态",
+      "description": "go 的底层是从说话者认定的当前点向外移动。状态变化用法保留了这种“偏离当前状态”的感觉，因此常见 go bad、go wrong、go silent。",
+      "examples": [
+        { "en": "go home", "zh": "朝家的方向离开当前点" },
+        { "en": "go wrong", "zh": "事情偏离正常状态" },
+        { "en": "go quiet", "zh": "进入沉默状态" }
+      ]
+    },
+    {
+      "id": "be",
+      "label": "be",
+      "subtitle": "EXIST IN A STATE",
+      "category": "state",
+      "status": "explored",
+      "level": "concept",
+      "x": 930,
+      "y": 472,
+      "coreModel": "把主体与某个存在、身份或状态连接起来",
+      "description": "be 像一条等号或连接线：它不强调变化过程，而是建立主体此刻与状态、身份、位置之间的关系。",
+      "examples": [
+        { "en": "She is calm.", "zh": "她处于平静状态。" },
+        { "en": "The book is on the table.", "zh": "书与桌面位置建立关系。" }
+      ]
+    },
+    {
+      "id": "stay",
+      "label": "stay",
+      "subtitle": "KEEP A STATE",
+      "category": "state",
+      "status": "seed",
+      "level": "concept",
+      "x": 858,
+      "y": 572,
+      "coreModel": "抵抗变化并保持原有状态或位置",
+      "description": "stay 不只是“停留”，它强调在潜在变化中仍旧保持。stay calm 就是让平静状态继续存在。",
+      "examples": [
+        { "en": "stay calm", "zh": "保持平静" },
+        { "en": "stay at home", "zh": "继续处于家中" }
+      ]
+    },
+    {
+      "id": "in",
+      "label": "in",
+      "subtitle": "INSIDE A BOUNDARY",
+      "category": "space",
+      "status": "explored",
+      "level": "concept",
+      "x": 180,
+      "y": 175,
+      "coreModel": "位于某个有边界的空间、范围或状态内部",
+      "description": "in 的核心是“内部关系”。容器可以是房间，也可以是时间段、群体、活动或抽象状态。",
+      "examples": [
+        { "en": "in the box", "zh": "在盒子内部" },
+        { "en": "in July", "zh": "在七月这个时间范围内" },
+        { "en": "in danger", "zh": "处于危险状态内部" }
+      ]
+    },
+    {
+      "id": "into",
+      "label": "into",
+      "subtitle": "CROSS INTO",
+      "category": "space",
+      "status": "explored",
+      "level": "concept",
+      "x": 112,
+      "y": 293,
+      "coreModel": "跨越边界，从外部进入内部",
+      "description": "into = in + 方向。它不仅说明内部关系，还明确包含边界被跨越的动态过程，因此也能表达状态变化。",
+      "examples": [
+        { "en": "walk into the room", "zh": "走进房间" },
+        { "en": "turn water into ice", "zh": "把水转化成冰" },
+        { "en": "get into trouble", "zh": "进入麻烦状态" }
+      ]
+    },
+    {
+      "id": "on",
+      "label": "on",
+      "subtitle": "CONTACT A SURFACE",
+      "category": "space",
+      "status": "growing",
+      "level": "concept",
+      "x": 236,
+      "y": 88,
+      "coreModel": "与表面、线路或运行系统保持接触",
+      "description": "on 的核心不是简单的“在上面”，而是接触并由某个表面、媒介或系统承载。",
+      "examples": [
+        { "en": "on the table", "zh": "与桌面接触" },
+        { "en": "on TV", "zh": "通过电视媒介呈现" },
+        { "en": "the light is on", "zh": "设备处于接通运行状态" }
+      ]
+    },
+    {
+      "id": "onto",
+      "label": "onto",
+      "subtitle": "MOVE TO A SURFACE",
+      "category": "space",
+      "status": "seed",
+      "level": "concept",
+      "x": 365,
+      "y": 92,
+      "coreModel": "朝向并接触一个表面",
+      "description": "onto = on + 方向，强调从未接触到接触表面的变化。",
+      "examples": [
+        { "en": "jump onto the stage", "zh": "跳上舞台表面" }
+      ]
+    },
+    {
+      "id": "through",
+      "label": "through",
+      "subtitle": "INSIDE A PATH",
+      "category": "motion",
+      "status": "growing",
+      "level": "concept",
+      "x": 175,
+      "y": 468,
+      "coreModel": "从内部路径的一端穿行到另一端",
+      "description": "through 强调过程发生在某个内部空间、媒介或阶段中，因此可由隧道延伸到经历困难、完成过程。",
+      "examples": [
+        { "en": "through the forest", "zh": "穿过森林内部" },
+        { "en": "go through a hard time", "zh": "经历一段艰难时期" }
+      ]
+    },
+    {
+      "id": "across",
+      "label": "across",
+      "subtitle": "SIDE TO SIDE",
+      "category": "motion",
+      "status": "growing",
+      "level": "concept",
+      "x": 238,
+      "y": 590,
+      "coreModel": "从一个侧面横越到另一个侧面",
+      "description": "across 关注表面或区域两侧之间的横向跨越，不强调在内部通道中前进。",
+      "examples": [
+        { "en": "walk across the street", "zh": "横穿街道" },
+        { "en": "across the country", "zh": "遍及国家各地" }
+      ]
+    },
+    {
+      "id": "over",
+      "label": "over",
+      "subtitle": "ABOVE / BEYOND",
+      "category": "space",
+      "status": "seed",
+      "level": "concept",
+      "x": 463,
+      "y": 112,
+      "coreModel": "位于上方、越过边界，或覆盖一个范围",
+      "description": "over 把上方位置、跨越动作和覆盖范围连接起来，也能进一步表达结束、控制、重复等抽象关系。",
+      "examples": [
+        { "en": "fly over the city", "zh": "从城市上空越过" },
+        { "en": "the game is over", "zh": "事件越过终点，已经结束" }
+      ]
+    },
+    {
+      "id": "under",
+      "label": "under",
+      "subtitle": "BELOW / CONTROL",
+      "category": "space",
+      "status": "seed",
+      "level": "concept",
+      "x": 462,
+      "y": 300,
+      "coreModel": "位于下方，或处在某种力量与规则覆盖之下",
+      "description": "under 从垂直下方延伸到受控制、受影响和处于进行中的状态。",
+      "examples": [
+        { "en": "under the bridge", "zh": "在桥下" },
+        { "en": "under pressure", "zh": "处于压力作用之下" }
+      ]
+    },
+    {
+      "id": "look",
+      "label": "look",
+      "subtitle": "DIRECT ATTENTION",
+      "category": "perception",
+      "status": "seed",
+      "level": "concept",
+      "x": 665,
+      "y": 88,
+      "coreModel": "主动把视觉注意力朝向目标",
+      "description": "look 强调意图和注意力的方向；see 更接近视觉结果，watch 则强调持续观察。",
+      "examples": [
+        { "en": "look at the map", "zh": "把视线主动指向地图" }
+      ]
+    }
+  ],
+  "links": [
+    { "source": "english", "target": "change", "type": "domain", "label": "organizes" },
+    { "source": "english", "target": "space", "type": "domain", "label": "organizes" },
+    { "source": "english", "target": "motion", "type": "domain", "label": "organizes" },
+    { "source": "english", "target": "state", "type": "domain", "label": "organizes" },
+    { "source": "change", "target": "get", "type": "family", "label": "reach" },
+    { "source": "change", "target": "become", "type": "family", "label": "transform" },
+    { "source": "change", "target": "turn", "type": "family", "label": "turn" },
+    { "source": "change", "target": "grow", "type": "family", "label": "develop" },
+    { "source": "change", "target": "go", "type": "bridge", "label": "change path" },
+    { "source": "state", "target": "be", "type": "family", "label": "exist" },
+    { "source": "state", "target": "stay", "type": "family", "label": "continue" },
+    { "source": "state", "target": "get", "type": "bridge", "label": "arrive" },
+    { "source": "space", "target": "in", "type": "family", "label": "inside" },
+    { "source": "space", "target": "into", "type": "family", "label": "enter" },
+    { "source": "space", "target": "on", "type": "family", "label": "contact" },
+    { "source": "space", "target": "onto", "type": "family", "label": "land" },
+    { "source": "space", "target": "over", "type": "family", "label": "above" },
+    { "source": "space", "target": "under", "type": "family", "label": "below" },
+    { "source": "motion", "target": "go", "type": "family", "label": "move" },
+    { "source": "motion", "target": "through", "type": "family", "label": "inside path" },
+    { "source": "motion", "target": "across", "type": "family", "label": "cross surface" },
+    { "source": "in", "target": "into", "type": "contrast", "label": "state → motion" },
+    { "source": "on", "target": "onto", "type": "contrast", "label": "state → motion" },
+    { "source": "into", "target": "get", "type": "bridge", "label": "get into" },
+    { "source": "through", "target": "go", "type": "bridge", "label": "go through" },
+    { "source": "be", "target": "get", "type": "contrast", "label": "state → change" },
+    { "source": "go", "target": "get", "type": "contrast", "label": "path → result" },
+    { "source": "english", "target": "look", "type": "future", "label": "perception" }
+  ]
+}
